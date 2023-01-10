@@ -24,6 +24,10 @@ h1{
   color: white;
   background-color: #1b1b32;
 }
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
@@ -31,6 +35,17 @@ h1{
 }
 .seccion-texto{
   font-size: 1.2rem;
+}
+
+/* Login */
+.login {
+  height: 50px;
+  padding: 10px;
+}
+.login-imagen{
+  height: 50px;
+  /* width: 300px; */
+  border: solid 2px black;
 }
 
 /* Seccion Principal */
@@ -51,7 +66,7 @@ h1{
 }
 .principal-superior h2{
   font-size:1.5rem;
-  color: red;
+  color: black;
 }
 .principal-inferior{
   display: flex;
@@ -61,6 +76,7 @@ h1{
   text-align: center;
   justify-content: center;
 }
+
 /* Sobre mi */
 .sobre-mi {
   height: 350px;
@@ -69,6 +85,19 @@ h1{
 .sobre-mi .contenedor{
   max-width: 600px;
   text-align: center;
+}
+
+/* seccion experiencia */
+
+/* Proyecto */
+.proyectos {
+  padding: 40px 40px 80px 40px;
+}
+.proyectos .carousel {
+  max-width: 800px;
+}
+.carousel-item {
+  height: 500px;
 }
 
 /* Adaptable/responsivo */
