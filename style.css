@@ -26,7 +26,11 @@ h1{
 }
 .seccion-clara {
   color: black;
-  background-color: white;
+  background-color: white;  
+}
+.seccion-transparente {
+  color: black;
+  background-color: transparent;
 }
 .seccion-titulo {
   font-size: 2rem;
@@ -50,7 +54,7 @@ h1{
 
 /* Seccion Principal */
 .principal {
-  background-color: #f5f6f7;
+  background-color:#FEF5E7;
   min-height: 350px;
   text-align: center;
 }
@@ -70,7 +74,7 @@ h1{
 }
 .principal-inferior{
   display: flex;
-  background-color: darkcyan;
+  background-color: rgb(2, 0, 139);
   padding: 4px;
   height: 50px;
   text-align: center;
@@ -79,7 +83,7 @@ h1{
 
 /* Sobre mi */
 .sobre-mi {
-  height: 350px;
+  height: 250px;
   padding: 10px
 }
 .sobre-mi .contenedor{
@@ -87,17 +91,68 @@ h1{
   text-align: center;
 }
 
+/* Seccion Educacion */
+.educacion {
+  background-color:#FEF5E7;
+  min-height: 180px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.educacion-imagen-logo{
+  width: 70px;
+  height:70px;
+  margin-right: 15px;
+}
+.educacion-titulo {
+  font-size: 1.5rem;
+  font-family: 'Lilita One', cursive;
+  margin: 0; 
+}
+.educacion-texto {
+  font-size: 1.1rem;
+  font-family: 'Lilita One', cursive;
+  text-align: left;
+  margin: 0; 
+}
+
 /* seccion experiencia */
+.experiencia .row div {
+  height: 200px;
+  background-color: blue;
+  border: 3px solid olive;
+  border-radius: 10%;
+}
+.experiencia-cargo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.experiencia-texto {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
 
 /* Proyecto */
 .proyectos {
-  padding: 40px 40px 80px 40px;
+  padding: 40px 40px 40px 40px;
 }
+.proyectos img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
 .proyectos .carousel {
   max-width: 800px;
 }
 .carousel-item {
-  height: 500px;
+  max-height: 500px;
+}
+.carousel-caption {
+  max-height: 150px;
+  padding: 0;
 }
 
 /* Adaptable/responsivo */
@@ -105,4 +160,14 @@ h1{
   .navbar-brand {
     display :none;
   }  
-}   
+}
+@media screen and (max-width:610px) {
+  .educacion-titulo {
+    font-size: 1.2rem;
+    margin: 0; 
+  }
+  .educacion-texto {
+    font-size: 0.8rem;
+    margin: 0; 
+  }
+}
